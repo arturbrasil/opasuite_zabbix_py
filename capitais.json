@@ -1,13 +1,13 @@
 [
     {
         "key": "Conect_01",
-        "name": "Conect_01",
+        "name": "Conect_01_name",
         "latitude": -2.435466,
         "longitude": -54.698137
     },
     {
         "key": "Belterra",
-        "name": "Belterra",
+        "name": "Belterra_name",
         "latitude": -2.435466,
         "longitude": -54.698137
     }
