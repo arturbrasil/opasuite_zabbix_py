@@ -8,25 +8,25 @@
     {
         "key": "Conect_02",
         "name": "Conect_02_name",
-        "latitude": -2.589338,
-        "longitude": -54.644289
+        "latitude": "-2.589338",
+        "longitude": "-54.644289"
     },
     {
         "key": "Conect_03",
         "name": "Conect_03_name",
-        "latitude": -2.528770,
-        "longitude": -54.722556
+        "latitude": "-2.528770",
+        "longitude": "-54.722556"
     },
     {
         "key": "Boa Esperanca",
         "name": "Boa Esperanca_name",
-        "latitude": -2.720205,
-        "longitude": -54.506919
+        "latitude": "-2.720205",
+        "longitude": "-54.506919"
     },
     {
         "key": "Belterra",
         "name": "Belterra_name",
-        "latitude": -2.637000,
-        "longitude": -54.905597
+        "latitude": "-2.637000",
+        "longitude": "-54.905597"
     }
 ]
