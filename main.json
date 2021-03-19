@@ -32,5 +32,9 @@
     }, {
         "nome": "Eryk Jorge",
         "_id": "6001ce429a3fe803a2ccecb9"
+    }],
+    "departamentos": [{
+        "nome": "Suporte",
+        "_ide": "xxxxxxxxxxx"
     }]
-}   
+}
