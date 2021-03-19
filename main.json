@@ -1,4 +1,4 @@
-[{
+{
     "usuarios": [{
         "nome": "Saulo Costa (NOC)",
         "_id": "5d1642434b16a50312cc8f43"
@@ -35,6 +35,12 @@
     }],
     "departamentos": [{
         "nome": "Suporte",
-        "_ide": "xxxxxxxxxxx"
+        "_id": "xxxxxxxx"
+    }, {
+        "nome": "Financeiro",
+        "_id": "xxxxxxxx"
+    }, {
+        "nome": "Comercial",
+        "_id": "xxxxxxxx"
     }]
-}]
+}
