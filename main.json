@@ -32,15 +32,5 @@
     }, {
         "nome": "Eryk Jorge",
         "_id": "6001ce429a3fe803a2ccecb9"
-    }],
-    "departamentos": [{
-        "nome": "Suporte",
-        "_id": "xxxxxxxx"
-    }, {
-        "nome": "Financeiro",
-        "_id": "xxxxxxxx"
-    }, {
-        "nome": "Comercial",
-        "_id": "xxxxxxxx"
     }]
 }
