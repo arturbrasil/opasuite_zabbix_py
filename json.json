@@ -1,0 +1,220 @@
+[{
+        "_id": {
+            "oid": "60db698199a5e60273e988cb"
+        },
+        "id_atendimento": 0,
+        "tags": [{
+            "oid": "60e8349818dbe802a348f1c3"
+        }],
+        "usuarios_acompanhar": [
+
+        ],
+        "id_atendente": {
+            "oid": "60da025499a5e60273e972e2"
+        },
+        "id_cliente": {
+            "oid": "5eea5c78a7a932038e30f9cd"
+        },
+        "id_user": {
+            "oid": "5eea5c78a7a932038e30f9ce"
+        },
+        "canal": "whatsapp",
+        "canal_cliente": "559381265872@c.us",
+        "canal_id": "6075a694855dad4241a9a37e",
+        "setor": {
+            "oid": "5d1624085e74a002308aa25e"
+        },
+        "descricao": "",
+        "status": "EA",
+        "date": {
+            "$date": 1624992129085
+        },
+        "inicio": {
+            "$date": 1624992129085
+        },
+        "fim": {
+            "$date": 1624992129085
+        },
+        "update": {
+            "$date": 1625774073056
+        },
+        "protocolo": "CONECT202170490",
+        "atendentes": [{
+            "_id": {
+                "oid": "60db698199a5e60273e988cc"
+            },
+            "atendente": {
+                "oid": "60da025499a5e60273e972e2"
+            },
+            "departamento": {
+                "oid": "5d1624085e74a002308aa25e"
+            },
+            "atendimentoHumano": true,
+            "inicio": {
+                "$date": 1624992129088
+            },
+            "fim": {
+                "$date": 1624992129088
+            }
+        }],
+        "avaliacoes": [
+
+        ],
+        "ultimaTransferencia": {
+            "$date": 1624992129089
+        },
+        "data_fixacao": {
+            "$date": 1624992129089
+        },
+        "observacoes": [
+
+        ],
+        "__v": 3
+    },
+    {
+        "_id": {
+            "oid": "60db6a1199a5e60273e988da"
+        },
+        "id_atendimento": 0,
+        "tags": [
+
+        ],
+        "usuarios_acompanhar": [
+
+        ],
+        "id_atendente": {
+            "oid": "60da025499a5e60273e972e2"
+        },
+        "id_cliente": {
+            "oid": "5eeb7108dfbd5c7f3b84f25b"
+        },
+        "id_user": {
+            "oid": "5eeb7108dfbd5c7f3b84f25c"
+        },
+        "canal": "whatsapp",
+        "canal_cliente": "559391708101@c.us",
+        "canal_id": "6075a694855dad4241a9a37e",
+        "setor": {
+            "oid": "5d1624085e74a002308aa25e"
+        },
+        "descricao": "",
+        "status": "EA",
+        "date": {
+            "$date": 1624992273016
+        },
+        "inicio": {
+            "$date": 1624992273016
+        },
+        "fim": {
+            "$date": 1624992273016
+        },
+        "update": {
+            "$date": 1625659018542
+        },
+        "protocolo": "CONECT202170493",
+        "atendentes": [{
+            "_id": {
+                "oid": "60db6a1199a5e60273e988db"
+            },
+            "atendente": {
+                "oid": "60da025499a5e60273e972e2"
+            },
+            "departamento": {
+                "oid": "5d1624085e74a002308aa25e"
+            },
+            "atendimentoHumano": true,
+            "inicio": {
+                "$date": 1624992273020
+            },
+            "fim": {
+                "$date": 1624992273020
+            }
+        }],
+        "avaliacoes": [
+
+        ],
+        "ultimaTransferencia": {
+            "$date": 1624992273020
+        },
+        "data_fixacao": {
+            "$date": 1624992273020
+        },
+        "observacoes": [
+
+        ],
+        "__v": 0
+    },
+    {
+        "_id": {
+            "oid": "60dc54250e6738027c52d385"
+        },
+        "id_atendimento": 0,
+        "tags": [
+
+        ],
+        "usuarios_acompanhar": [
+
+        ],
+        "id_atendente": {
+            "oid": "60da025499a5e60273e972e2"
+        },
+        "id_cliente": {
+            "oid": "5eedfef092e31503afc614f8"
+        },
+        "id_user": {
+            "oid": "5eedfef092e31503afc614f9"
+        },
+        "canal": "whatsapp",
+        "canal_cliente": "559391960481@c.us",
+        "canal_id": "6075a694855dad4241a9a37e",
+        "setor": {
+            "oid": "5d1624085e74a002308aa25e"
+        },
+        "descricao": "",
+        "status": "EA",
+        "date": {
+            "$date": 1625052197412
+        },
+        "inicio": {
+            "$date": 1625052197412
+        },
+        "fim": {
+            "$date": 1625052197412
+        },
+        "update": {
+            "$date": 1625661460912
+        },
+        "protocolo": "CONECT202170621",
+        "atendentes": [{
+            "_id": {
+                "oid": "60dc54250e6738027c52d386"
+            },
+            "atendente": {
+                "oid": "60da025499a5e60273e972e2"
+            },
+            "departamento": {
+                "oid": "5d1624085e74a002308aa25e"
+            },
+            "atendimentoHumano": true,
+            "inicio": {
+                "$date": 1625052197415
+            },
+            "fim": {
+                "$date": 1625052197415
+            }
+        }],
+        "avaliacoes": [
+
+        ],
+        "ultimaTransferencia": {
+            "$date": 1625052197415
+        },
+        "data_fixacao": {
+            "$date": 1625052197415
+        },
+        "observacoes": [
+
+        ],
+        "__v": 0
+    }
+]
