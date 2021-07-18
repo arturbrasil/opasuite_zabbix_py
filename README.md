@@ -4,8 +4,6 @@
 
 > Contador de atendimentos por canal
 
-- WhatsApp
-
 ```js
 $[?(@.canal == "whatsapp")].length()
 $[?(@.canal == "messenger")].length()
