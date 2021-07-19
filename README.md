@@ -15,9 +15,15 @@
 
 - Contador de atendemento para cada Usuário
 
-![asd](./recursos/img/print.png)
+![print grafana](./recursos/img/print.png)
 
-## Usuarios
+- [Script em Python](./recursos/python/opaSuite.py)
+
+- [Daashboard do Grafana](./recursos/grafana/dashboard_opa_suite.json)
+
+- [Template do Zabbix](./recursos/zabbix/OpaSuiteTemplate.xml)
+
+## Zabbix
 
 > Contador de usuarios ativos
 

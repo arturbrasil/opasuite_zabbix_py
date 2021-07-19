@@ -1,0 +1,1217 @@
+{
+    "annotations": {
+        "list": [{
+            "builtIn": 1,
+            "datasource": "-- Grafana --",
+            "enable": true,
+            "hide": true,
+            "iconColor": "rgba(0, 211, 255, 1)",
+            "name": "Annotations & Alerts",
+            "type": "dashboard"
+        }]
+    },
+    "description": "",
+    "editable": true,
+    "gnetId": null,
+    "graphTooltip": 1,
+    "id": 44,
+    "iteration": 1626706028503,
+    "links": [],
+    "panels": [{
+            "datasource": null,
+            "gridPos": {
+                "h": 2,
+                "w": 9,
+                "x": 0,
+                "y": 0
+            },
+            "id": 13,
+            "options": {
+                "content": "<center>\n    <p style=\"font-size:37px; background-color:#00FF7F;color:black\">\n        Aguardando Atendimento\n    </p>\n</center>",
+                "mode": "html"
+            },
+            "pluginVersion": "8.0.6",
+            "targets": [{
+                "application": {
+                    "filter": ""
+                },
+                "functions": [],
+                "group": {
+                    "filter": ""
+                },
+                "host": {
+                    "filter": ""
+                },
+                "item": {
+                    "filter": ""
+                },
+                "options": {
+                    "disableDataAlignment": false,
+                    "showDisabledItems": false,
+                    "skipEmptyValues": false
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": 0,
+                "refId": "A",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": false
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": true,
+                    "minSeverity": 3
+                }
+            }],
+            "timeFrom": null,
+            "timeShift": null,
+            "type": "text"
+        },
+        {
+            "datasource": null,
+            "gridPos": {
+                "h": 4,
+                "w": 6,
+                "x": 9,
+                "y": 0
+            },
+            "id": 40,
+            "options": {
+                "content": "<br>\r\n<br>\r\n<center>\r\n    <img src=\"https://conectsantarem.com.br/mac/img/logo.png\"\r\n    width=\"\"\r\n    height=\"\">\r\n</center>",
+                "mode": "html"
+            },
+            "pluginVersion": "8.0.6",
+            "targets": [{
+                "application": {
+                    "filter": "OPA - Usuarios"
+                },
+                "functions": [{
+                    "$$hashKey": "object:140",
+                    "def": {
+                        "category": "Alias",
+                        "defaultParams": [
+                            "/(.*)/",
+                            "$1"
+                        ],
+                        "name": "replaceAlias",
+                        "params": [{
+                                "name": "regexp",
+                                "type": "string"
+                            },
+                            {
+                                "name": "newAlias",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "params": [
+                        "/Usuarios (.*)/",
+                        "$1"
+                    ],
+                    "text": "replaceAlias(/Usuarios (.*)/, $1)"
+                }],
+                "group": {
+                    "filter": "OPA SUITE"
+                },
+                "host": {
+                    "filter": "Opa Suite"
+                },
+                "item": {
+                    "filter": "/.*/"
+                },
+                "options": {
+                    "disableDataAlignment": false,
+                    "showDisabledItems": false,
+                    "skipEmptyValues": false
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": 0,
+                "refId": "A",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": false
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": true,
+                    "minSeverity": 3
+                }
+            }],
+            "timeFrom": null,
+            "timeShift": null,
+            "transparent": true,
+            "type": "text"
+        },
+        {
+            "datasource": null,
+            "gridPos": {
+                "h": 2,
+                "w": 9,
+                "x": 15,
+                "y": 0
+            },
+            "id": 15,
+            "options": {
+                "content": "<center>\n<p style=\"font-size:37px; background-color:#00FF7F;color:black\">\nEm Atendimento\n</p>    \n</center>",
+                "mode": "html"
+            },
+            "pluginVersion": "8.0.6",
+            "targets": [{
+                "application": {
+                    "filter": ""
+                },
+                "functions": [],
+                "group": {
+                    "filter": ""
+                },
+                "host": {
+                    "filter": ""
+                },
+                "item": {
+                    "filter": ""
+                },
+                "options": {
+                    "disableDataAlignment": false,
+                    "showDisabledItems": false,
+                    "skipEmptyValues": false
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": 0,
+                "refId": "A",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": false
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": true,
+                    "minSeverity": 3
+                }
+            }],
+            "timeFrom": null,
+            "timeShift": null,
+            "type": "text"
+        },
+        {
+            "datasource": null,
+            "description": "",
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "continuous-GrYlRd"
+                    },
+                    "mappings": [{
+                        "options": {
+                            "match": "null",
+                            "result": {
+                                "color": "green",
+                                "text": "0"
+                            }
+                        },
+                        "type": "special"
+                    }],
+                    "max": 50,
+                    "min": 0,
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [{
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    },
+                    "unit": "short"
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 4,
+                "w": 9,
+                "x": 0,
+                "y": 2
+            },
+            "id": 14,
+            "options": {
+                "colorMode": "background",
+                "graphMode": "none",
+                "justifyMode": "center",
+                "orientation": "vertical",
+                "reduceOptions": {
+                    "calcs": [
+                        "last"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "text": {},
+                "textMode": "value_and_name"
+            },
+            "pluginVersion": "8.0.6",
+            "targets": [{
+                "application": {
+                    "filter": "Aguardando Atendimento por Canais"
+                },
+                "functions": [{
+                    "$$hashKey": "object:113",
+                    "def": {
+                        "category": "Alias",
+                        "defaultParams": [
+                            "/(.*)/",
+                            "$1"
+                        ],
+                        "name": "replaceAlias",
+                        "params": [{
+                                "name": "regexp",
+                                "type": "string"
+                            },
+                            {
+                                "name": "newAlias",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "params": [
+                        "/Aguardando Atendimento Canal (.*)/",
+                        "$1"
+                    ],
+                    "text": "replaceAlias(/Aguardando Atendimento Canal (.*)/, $1)"
+                }],
+                "group": {
+                    "filter": "OPA SUITE"
+                },
+                "host": {
+                    "filter": "$Opa_Suite"
+                },
+                "item": {
+                    "filter": "/.*/"
+                },
+                "options": {
+                    "disableDataAlignment": false,
+                    "showDisabledItems": false,
+                    "skipEmptyValues": false,
+                    "useZabbixValueMapping": false
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": 0,
+                "refId": "A",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": false
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": true,
+                    "minSeverity": 3
+                }
+            }],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "CANAIS DE ATENDIMENTO",
+            "type": "stat"
+        },
+        {
+            "datasource": null,
+            "description": "",
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "continuous-RdYlGr"
+                    },
+                    "mappings": [{
+                        "options": {
+                            "match": "null",
+                            "result": {
+                                "color": "green",
+                                "text": "0"
+                            }
+                        },
+                        "type": "special"
+                    }],
+                    "max": 100,
+                    "min": -100,
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [{
+                            "color": "yellow",
+                            "value": null
+                        }]
+                    },
+                    "unit": "short"
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 4,
+                "w": 9,
+                "x": 15,
+                "y": 2
+            },
+            "id": 35,
+            "options": {
+                "colorMode": "background",
+                "graphMode": "none",
+                "justifyMode": "center",
+                "orientation": "vertical",
+                "reduceOptions": {
+                    "calcs": [
+                        "last"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "text": {},
+                "textMode": "value_and_name"
+            },
+            "pluginVersion": "8.0.6",
+            "targets": [{
+                "application": {
+                    "filter": "Em Atendimento por Canais"
+                },
+                "functions": [{
+                    "$$hashKey": "object:140",
+                    "def": {
+                        "category": "Alias",
+                        "defaultParams": [
+                            "/(.*)/",
+                            "$1"
+                        ],
+                        "name": "replaceAlias",
+                        "params": [{
+                                "name": "regexp",
+                                "type": "string"
+                            },
+                            {
+                                "name": "newAlias",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "params": [
+                        "/Em Atendimento Canal (.*)/",
+                        "$1"
+                    ],
+                    "text": "replaceAlias(/Em Atendimento Canal (.*)/, $1)"
+                }],
+                "group": {
+                    "filter": "OPA SUITE"
+                },
+                "host": {
+                    "filter": "$Opa_Suite"
+                },
+                "item": {
+                    "filter": "/.*/"
+                },
+                "options": {
+                    "disableDataAlignment": false,
+                    "showDisabledItems": false,
+                    "skipEmptyValues": false,
+                    "useZabbixValueMapping": false
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": 0,
+                "refId": "A",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": false
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": true,
+                    "minSeverity": 3
+                }
+            }],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "CANAIS DE ATENDIMENTO",
+            "type": "stat"
+        },
+        {
+            "datasource": null,
+            "gridPos": {
+                "h": 4,
+                "w": 6,
+                "x": 9,
+                "y": 4
+            },
+            "id": 38,
+            "options": {
+                "content": "<center>\r\n    <img src=\"https://conectchat.com.br/atendente/login/images/opasuite.svg\"\r\n    width=\"200 \">\r\n</center>",
+                "mode": "html"
+            },
+            "pluginVersion": "8.0.6",
+            "targets": [{
+                "application": {
+                    "filter": "OPA - Usuarios"
+                },
+                "functions": [{
+                    "$$hashKey": "object:140",
+                    "def": {
+                        "category": "Alias",
+                        "defaultParams": [
+                            "/(.*)/",
+                            "$1"
+                        ],
+                        "name": "replaceAlias",
+                        "params": [{
+                                "name": "regexp",
+                                "type": "string"
+                            },
+                            {
+                                "name": "newAlias",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "params": [
+                        "/Usuarios (.*)/",
+                        "$1"
+                    ],
+                    "text": "replaceAlias(/Usuarios (.*)/, $1)"
+                }],
+                "group": {
+                    "filter": "OPA SUITE"
+                },
+                "host": {
+                    "filter": "Opa Suite"
+                },
+                "item": {
+                    "filter": "/.*/"
+                },
+                "options": {
+                    "disableDataAlignment": false,
+                    "showDisabledItems": false,
+                    "skipEmptyValues": false
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": 0,
+                "refId": "A",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": false
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": true,
+                    "minSeverity": 3
+                }
+            }],
+            "timeFrom": null,
+            "timeShift": null,
+            "transparent": true,
+            "type": "text"
+        },
+        {
+            "datasource": null,
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "continuous-GrYlRd"
+                    },
+                    "mappings": [],
+                    "max": 50,
+                    "min": 0,
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [{
+                            "color": "green",
+                            "value": null
+                        }]
+                    }
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 8,
+                "w": 9,
+                "x": 0,
+                "y": 6
+            },
+            "id": 34,
+            "options": {
+                "colorMode": "background",
+                "graphMode": "none",
+                "justifyMode": "center",
+                "orientation": "auto",
+                "reduceOptions": {
+                    "calcs": [
+                        "last"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "text": {},
+                "textMode": "value_and_name"
+            },
+            "pluginVersion": "8.0.6",
+            "targets": [{
+                "application": {
+                    "filter": "Aguardando Atendimento por Setor"
+                },
+                "functions": [{
+                    "$$hashKey": "object:113",
+                    "def": {
+                        "category": "Alias",
+                        "defaultParams": [
+                            "/(.*)/",
+                            "$1"
+                        ],
+                        "name": "replaceAlias",
+                        "params": [{
+                                "name": "regexp",
+                                "type": "string"
+                            },
+                            {
+                                "name": "newAlias",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "params": [
+                        "/Aguardando Atendimento Setor (.*)/",
+                        "$1"
+                    ],
+                    "text": "replaceAlias(/Aguardando Atendimento Setor (.*)/, $1)"
+                }],
+                "group": {
+                    "filter": "OPA SUITE"
+                },
+                "host": {
+                    "filter": "$Opa_Suite"
+                },
+                "item": {
+                    "filter": "/.*/"
+                },
+                "options": {
+                    "disableDataAlignment": false,
+                    "showDisabledItems": false,
+                    "skipEmptyValues": false,
+                    "useZabbixValueMapping": false
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": 0,
+                "refId": "A",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": false
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": true,
+                    "minSeverity": 3
+                }
+            }],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "SETOR",
+            "type": "stat"
+        },
+        {
+            "datasource": null,
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "continuous-GrYlRd"
+                    },
+                    "mappings": [],
+                    "max": 100,
+                    "min": 0,
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [{
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 8,
+                "w": 9,
+                "x": 15,
+                "y": 6
+            },
+            "id": 24,
+            "options": {
+                "colorMode": "background",
+                "graphMode": "none",
+                "justifyMode": "center",
+                "orientation": "auto",
+                "reduceOptions": {
+                    "calcs": [
+                        "last"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "text": {},
+                "textMode": "value_and_name"
+            },
+            "pluginVersion": "8.0.6",
+            "targets": [{
+                "application": {
+                    "filter": "Em Atendimento por Setor"
+                },
+                "functions": [{
+                    "$$hashKey": "object:32",
+                    "def": {
+                        "category": "Alias",
+                        "defaultParams": [
+                            "/(.*)/",
+                            "$1"
+                        ],
+                        "name": "replaceAlias",
+                        "params": [{
+                                "name": "regexp",
+                                "type": "string"
+                            },
+                            {
+                                "name": "newAlias",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "params": [
+                        "/Em Atendimento Setor (.*)/",
+                        "$1"
+                    ],
+                    "text": "replaceAlias(/Em Atendimento Setor (.*)/, $1)"
+                }],
+                "group": {
+                    "filter": "OPA SUITE"
+                },
+                "host": {
+                    "filter": "$Opa_Suite"
+                },
+                "item": {
+                    "filter": "/.*/"
+                },
+                "options": {
+                    "disableDataAlignment": false,
+                    "showDisabledItems": false,
+                    "skipEmptyValues": false,
+                    "useZabbixValueMapping": false
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": 0,
+                "refId": "A",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": false
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": true,
+                    "minSeverity": 3
+                }
+            }],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "SETOR",
+            "type": "stat"
+        },
+        {
+            "datasource": null,
+            "description": "",
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "thresholds"
+                    },
+                    "mappings": [{
+                        "options": {
+                            "match": "null",
+                            "result": {
+                                "color": "green",
+                                "text": "0"
+                            }
+                        },
+                        "type": "special"
+                    }],
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [{
+                            "color": "green",
+                            "value": null
+                        }]
+                    },
+                    "unit": "short"
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 3,
+                "w": 6,
+                "x": 9,
+                "y": 8
+            },
+            "id": 16,
+            "options": {
+                "colorMode": "value",
+                "graphMode": "none",
+                "justifyMode": "center",
+                "orientation": "auto",
+                "reduceOptions": {
+                    "calcs": [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "text": {},
+                "textMode": "value_and_name"
+            },
+            "pluginVersion": "8.0.6",
+            "targets": [{
+                "application": {
+                    "filter": "OPA - Usuarios"
+                },
+                "functions": [{
+                    "$$hashKey": "object:113",
+                    "def": {
+                        "category": "Alias",
+                        "defaultParams": [
+                            "/(.*)/",
+                            "$1"
+                        ],
+                        "name": "replaceAlias",
+                        "params": [{
+                                "name": "regexp",
+                                "type": "string"
+                            },
+                            {
+                                "name": "newAlias",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "params": [
+                        "/Total de Usuários (.*)/",
+                        "$1"
+                    ],
+                    "text": "replaceAlias(/Total de Usuários (.*)/, $1)"
+                }],
+                "group": {
+                    "filter": "OPA SUITE"
+                },
+                "host": {
+                    "filter": "$Opa_Suite"
+                },
+                "item": {
+                    "filter": "/.*/"
+                },
+                "options": {
+                    "disableDataAlignment": false,
+                    "showDisabledItems": false,
+                    "skipEmptyValues": false,
+                    "useZabbixValueMapping": false
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": 0,
+                "refId": "A",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": false
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": true,
+                    "minSeverity": 3
+                }
+            }],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "USUARIOS",
+            "type": "stat"
+        },
+        {
+            "datasource": null,
+            "description": "",
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "continuous-RdYlGr"
+                    },
+                    "mappings": [],
+                    "max": 10000,
+                    "min": 5000,
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": []
+                    },
+                    "unit": "short"
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 3,
+                "w": 6,
+                "x": 9,
+                "y": 11
+            },
+            "id": 39,
+            "options": {
+                "colorMode": "value",
+                "graphMode": "none",
+                "justifyMode": "center",
+                "orientation": "horizontal",
+                "reduceOptions": {
+                    "calcs": [
+                        "lastNotNull"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "text": {},
+                "textMode": "value"
+            },
+            "pluginVersion": "8.0.6",
+            "targets": [{
+                "application": {
+                    "filter": "Saldo"
+                },
+                "functions": [{
+                    "$$hashKey": "object:140",
+                    "def": {
+                        "category": "Alias",
+                        "defaultParams": [
+                            "/(.*)/",
+                            "$1"
+                        ],
+                        "name": "replaceAlias",
+                        "params": [{
+                                "name": "regexp",
+                                "type": "string"
+                            },
+                            {
+                                "name": "newAlias",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "params": [
+                        "/(.*)/",
+                        "$1 - "
+                    ],
+                    "text": "replaceAlias(/(.*)/, $1 - )"
+                }],
+                "group": {
+                    "filter": "Hotmobile"
+                },
+                "host": {
+                    "filter": "Hotmobile SMS"
+                },
+                "item": {
+                    "filter": "Saldo SMS"
+                },
+                "options": {
+                    "disableDataAlignment": false,
+                    "showDisabledItems": false,
+                    "skipEmptyValues": false,
+                    "useZabbixValueMapping": false
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": 0,
+                "refId": "A",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": false
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": true,
+                    "minSeverity": 3
+                }
+            }],
+            "timeFrom": null,
+            "timeShift": null,
+            "title": "Saldo SMS",
+            "type": "stat"
+        },
+        {
+            "datasource": null,
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "thresholds"
+                    },
+                    "mappings": [{
+                        "options": {
+                            "0": {
+                                "index": 0,
+                                "text": "😴"
+                            }
+                        },
+                        "type": "value"
+                    }],
+                    "max": 35,
+                    "min": -20,
+                    "noValue": "0",
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [{
+                                "color": "rgba(47, 47, 47, 1)",
+                                "value": null
+                            },
+                            {
+                                "color": "yellow",
+                                "value": 1
+                            },
+                            {
+                                "color": "orange",
+                                "value": 10
+                            },
+                            {
+                                "color": "blue",
+                                "value": 20
+                            },
+                            {
+                                "color": "green",
+                                "value": 30
+                            }
+                        ]
+                    }
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 10,
+                "w": 24,
+                "x": 0,
+                "y": 14
+            },
+            "id": 30,
+            "options": {
+                "colorMode": "background",
+                "graphMode": "none",
+                "justifyMode": "center",
+                "orientation": "auto",
+                "reduceOptions": {
+                    "calcs": [
+                        "last"
+                    ],
+                    "fields": "",
+                    "values": false
+                },
+                "text": {},
+                "textMode": "value_and_name"
+            },
+            "pluginVersion": "8.0.6",
+            "targets": [{
+                "application": {
+                    "filter": "Contador de Atendimento por Usuario"
+                },
+                "functions": [{
+                    "$$hashKey": "object:33",
+                    "added": false,
+                    "def": {
+                        "category": "Alias",
+                        "defaultParams": [
+                            "/(.*)/",
+                            "$1"
+                        ],
+                        "name": "replaceAlias",
+                        "params": [{
+                                "name": "regexp",
+                                "type": "string"
+                            },
+                            {
+                                "name": "newAlias",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "params": [
+                        "/Usuario (.*)/",
+                        "$1"
+                    ],
+                    "text": "replaceAlias(/Usuario (.*)/, $1)"
+                }],
+                "group": {
+                    "filter": "OPA SUITE"
+                },
+                "host": {
+                    "filter": "$Opa_Suite"
+                },
+                "item": {
+                    "filter": "/.*/"
+                },
+                "options": {
+                    "disableDataAlignment": false,
+                    "showDisabledItems": false,
+                    "skipEmptyValues": false,
+                    "useZabbixValueMapping": false
+                },
+                "proxy": {
+                    "filter": ""
+                },
+                "queryType": 0,
+                "refId": "A",
+                "resultFormat": "time_series",
+                "table": {
+                    "skipEmptyValues": false
+                },
+                "tags": {
+                    "filter": ""
+                },
+                "trigger": {
+                    "filter": ""
+                },
+                "triggers": {
+                    "acknowledged": 2,
+                    "count": true,
+                    "minSeverity": 3
+                }
+            }],
+            "title": "Atendimentos por Atendente",
+            "type": "stat"
+        }
+    ],
+    "refresh": "30s",
+    "schemaVersion": 30,
+    "style": "dark",
+    "tags": [],
+    "templating": {
+        "list": [{
+            "allValue": null,
+            "current": {
+                "selected": false,
+                "text": "Opa Suite Clone",
+                "value": "Opa Suite Clone"
+            },
+            "datasource": null,
+            "definition": "Zabbix - host",
+            "description": null,
+            "error": null,
+            "hide": 0,
+            "includeAll": false,
+            "label": null,
+            "multi": false,
+            "name": "Opa_Suite",
+            "options": [],
+            "query": {
+                "application": "",
+                "group": "/OPA SUITE/",
+                "host": "/.*/",
+                "item": "",
+                "queryType": "host"
+            },
+            "refresh": 1,
+            "regex": "",
+            "skipUrlSync": false,
+            "sort": 0,
+            "type": "query"
+        }]
+    },
+    "time": {
+        "from": "now-1h",
+        "to": "now"
+    },
+    "timepicker": {
+        "refresh_intervals": [
+            "5s",
+            "10s",
+            "30s",
+            "1m",
+            "5m",
+            "15m",
+            "30m",
+            "1h",
+            "2h",
+            "1d"
+        ]
+    },
+    "timezone": "",
+    "title": "Call Center - Opa Suite",
+    "uid": "fUvJ4mW7z",
+    "version": 34
+}
