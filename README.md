@@ -15,7 +15,7 @@
 
 - Contador de atendemento para cada Usuário
 
-![asd](recursos/img/print.png)
+![asd](./recursos/img/print.png)
 
 ## Usuarios
 
