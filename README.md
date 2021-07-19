@@ -1,5 +1,22 @@
 # OPA SUITE + MONGODB + PYTHON
 
+- Contador de usuários
+  - Total ativo
+  - Total online
+
+- Contador de atendimentos
+  - Aguardando atendimentos
+    - Por setor/departamento
+    - Por canal
+  
+  - Em atendimento
+    - Por setor/departamento
+    - Por canal
+
+- Contador de atendemento para cada Usuário
+
+![asd](recursos/img/print.png)
+
 ## Usuarios
 
 > Contador de usuarios ativos
@@ -19,8 +36,9 @@ $[?(@.online == "on")].length()
 ```js
 // macros
 {#NOME} -> $.nome
-{#ID} -> $._id.oid
-// contador na 
+{#ID_ATENDENTE} -> $._id.oid
+
+//pre processsamento do prototipo de item
 $[?(@.id_atendente.oid == "{#ID_ATENDENTE}")].length()
 ```
 
@@ -32,10 +50,12 @@ $[?(@.canal == "messenger")].length()
 $[?(@.canal == "pabx")].length()
 ```
 
+> Contador de atendimentos por Setor/Departamento
+
 ```js
-$[?(@.canal == "whatsapp")].length()
-```
+{#DEPARTAMENTO} -> $.nome
+{#ID_DEPARTAMENTO} -> $._id.oid
 
-```json
-
+//pre processsamento do prototipo de item
+$[?(@.setor.oid == "{#ID_DEPARTAMENTO}")].length()
 ```
