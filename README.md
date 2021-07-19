@@ -34,7 +34,6 @@ $[?(@.canal == "pabx")].length()
 
 ```js
 $[?(@.canal == "whatsapp")].length()
-$[?(@.id_atendente.oid == {#ID_ATENDENTE})].length()
 ```
 
 ```json
