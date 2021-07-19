@@ -56,6 +56,8 @@ nano /home/scripts/opaSuite.py
 
 - [Script em Python](./recursos/python/opaSuite.py)
 
+![-](./recursos/img/teste_zabbix_agent.png)
+
 ## ZABBIX
 
 > Contador de usuarios ativos
