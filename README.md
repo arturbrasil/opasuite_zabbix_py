@@ -1,5 +1,40 @@
 # OPA SUITE + MONGODB + PYTHON
 
+![print grafana](./recursos/img/print.png)
+
+## ZABBIX-AGENT
+
+> no servidor Opa Suite...
+
+```sh
+apt update
+apt install zabbix-agent -y
+```
+
+```sh
+service zabbix-agent status
+```
+
+![print grafana](./recursos/img/service%20zabbix-agent%20status.png)
+
+```sh
+
+```
+
+```sh
+
+```
+
+```sh
+
+```
+
+```sh
+
+```
+
+## GRAFANA
+
 - Contador de usuários
   - Total ativo
   - Total online
