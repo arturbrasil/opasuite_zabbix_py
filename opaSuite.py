@@ -7,14 +7,14 @@ params = sys.argv
 item = params[1]
 mydb = pymongo.MongoClient("mongodb://127.0.0.1:27017/")["suite"]
 
-if item == "getAllUsuarios":
+if item == "getUsuariosAtivos":
     usuarios = (mydb["usuarios"].find({"status": "A"}))
     list_cur = list(usuarios)
     json_data = dumps(list_cur)
     print(json_data)
 
 if item == "getCanais":
-    canais = (mydb["canais"].find({"status": "A"}))
+    canais = (mydb["canal_comunicacaos"].find({"status": "A"}))
     list_cur = list(canais)
     json_data = dumps(list_cur)
     print(json_data)
@@ -31,14 +31,14 @@ if item == "getEmAtendimento":
     json_data = dumps(list_cur)
     print(json_data)
 
-if item == "getAguardandoAtendimento":
+if item == "getAguardando":
     atendimentos = (mydb["atendimentos"].find({"status": "AG"}))
     list_cur = list(atendimentos)
     json_data = dumps(list_cur)
     print(json_data)
 
-if item == "getAtendimentos":
+""" if item == "getAtendimentos":
     atendimentos = (mydb["atendimentos"].find({"status": "AG"}))
     list_cur = list(atendimentos)
     json_data = dumps(list_cur)
-    print(json_data)
+    print(json_data) """
