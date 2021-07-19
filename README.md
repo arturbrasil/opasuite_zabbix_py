@@ -17,48 +17,46 @@ service zabbix-agent status
 
 ![print grafana](./recursos/img/service%20zabbix-agent%20status.png)
 
-```sh
-
-```
+> Edite o arquivo '/etc/zabbix/zabbix_agentd.conf'
 
 ```sh
-
+nano /etc/zabbix/zabbix_agentd.conf
 ```
+
+> Altere a linha "# EnableRemoteCommands=0" para "EnableRemoteCommands=1"
+
+![-](./recursos/img/enable_remote_config.png)
+
+> Libere o IP ou rede do seu Zabbix server
+
+![-](./recursos/img/redes_permitidas.png)
+
+> Reinicie o serviço do zabbix-agent no Opa Suite
 
 ```sh
-
+service zabbix-agent restart
 ```
+
+> No Zabbix Server faça o teste de comunicação com o Zabbix Agent instalado no servidor Opa Suite
 
 ```sh
-
+zabbix_get -s ip_do_opa_suite -k "system.run[echo Funcionando...]"
 ```
 
-## GRAFANA
+![-](./recursos/img/teste_zabbix_agent.png)
 
-- Contador de usuários
-  - Total ativo
-  - Total online
+## PYTHON
 
-- Contador de atendimentos
-  - Aguardando atendimentos
-    - Por setor/departamento
-    - Por canal
-  
-  - Em atendimento
-    - Por setor/departamento
-    - Por canal
+```sh
+mkdir /home/scripts
+nano /home/scripts/opaSuite.py
+```
 
-- Contador de atendemento para cada Usuário
-
-![print grafana](./recursos/img/print.png)
+> Copie o código em python e cole no servidor
 
 - [Script em Python](./recursos/python/opaSuite.py)
 
-- [Daashboard do Grafana](./recursos/grafana/dashboard_opa_suite.json)
-
-- [Template do Zabbix](./recursos/zabbix/OpaSuiteTemplate.xml)
-
-## Zabbix
+## ZABBIX
 
 > Contador de usuarios ativos
 
@@ -100,3 +98,28 @@ $[?(@.canal == "pabx")].length()
 //pre processsamento do prototipo de item
 $[?(@.setor.oid == "{#ID_DEPARTAMENTO}")].length()
 ```
+
+## GRAFANA
+
+- Contador de usuários
+  - Total ativo
+  - Total online
+
+- Contador de atendimentos
+  - Aguardando atendimentos
+    - Por setor/departamento
+    - Por canal
+  
+  - Em atendimento
+    - Por setor/departamento
+    - Por canal
+
+- Contador de atendemento para cada Usuário
+
+![print grafana](./recursos/img/print.png)
+
+- [Script em Python](./recursos/python/opaSuite.py)
+
+- [Daashboard do Grafana](./recursos/grafana/dashboard_opa_suite.json)
+
+- [Template do Zabbix](./recursos/zabbix/OpaSuiteTemplate.xml)
