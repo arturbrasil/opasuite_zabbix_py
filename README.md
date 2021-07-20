@@ -103,20 +103,17 @@ $[?(@.setor.oid == "{#ID_DEPARTAMENTO}")].length()
 
 ## GRAFANA
 
-- Contador de usuários
-  - Total ativo
-  - Total online
-
-- Contador de atendimentos
-  - Aguardando atendimentos
-    - Por setor/departamento
-    - Por canal
-  
-  - Em atendimento
-    - Por setor/departamento
-    - Por canal
-
-- Contador de atendimentos para cada usuário
+1) Contador de usuários
+   1) Total ativos
+   2) Total online
+2) Contador de atendimentos
+   1) Aguardando atendimentos
+      1) Por setor/departamento
+      2) Por canal
+   2) Em atendimento
+      1) Por setor/departamento
+      2) Por canal
+3) Contador de atendimentos para cada usuário
 
 ![print grafana](./recursos/img/print.png)
 
