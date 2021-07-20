@@ -116,7 +116,7 @@ $[?(@.setor.oid == "{#ID_DEPARTAMENTO}")].length()
     - Por setor/departamento
     - Por canal
 
-- Contador de atendemento para cada Usuário
+- Contador de atendimentos para cada usuário
 
 ![print grafana](./recursos/img/print.png)
 
