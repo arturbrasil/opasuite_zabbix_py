@@ -8,7 +8,7 @@
 
 ```sh
 apt update
-apt install zabbix-agent -y
+apt install zabbix-agent
 ```
 
 ```sh
@@ -47,6 +47,22 @@ zabbix_get -s ip_do_opa_suite -k "system.run[echo Funcionando...]"
 
 ## PYTHON
 
+> PIP
+
+- PIP é um sistema de gerenciamento de pacotes padrão usado para instalar e gerenciar pacotes de software escritos em Python. Vamos instala-lo.
+
+```sh
+apt install python3-pip
+```
+
+> Instalação das bibliotecas pymongo
+
+```sh
+pip3 install pymongo
+```
+
+> Criar um diretório para salvar o script
+
 ```sh
 mkdir /home/scripts
 nano /home/scripts/opaSuite.py
@@ -56,9 +72,21 @@ nano /home/scripts/opaSuite.py
 
 - [Script em Python](./recursos/python/opaSuite.py)
 
-![-](./recursos/img/teste_zabbix_agent.png)
+> Teste se o script está retornando os dados do MondoDB
+
+```sh
+python3 /home/scripts/opaSuite.py getCanais
+```
+
+> Vai retornar o json com os canais cadastrados no seu Opa Suite
+
+![-](./recursos/img/teste_script_python.png)
+
+<!-- ![-](./recursos/img/teste_zabbix_agent.png) -->
 
 ## ZABBIX
+
+### Alguns detalhes sobre o template
 
 > Contador de usuarios ativos
 

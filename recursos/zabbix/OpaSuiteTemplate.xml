@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>5.0</version>
-    <date>2021-07-19T14:49:14Z</date>
+    <date>2021-07-20T13:40:52Z</date>
     <groups>
         <group>
             <name>OPA SUITE</name>
@@ -160,9 +160,9 @@ EA - Em Atendimento</description>
                     </master_item>
                 </item>
                 <item>
-                    <name>aaa getAguardando</name>
+                    <name>getAguardando</name>
                     <key>system.run[{$LOCALSCRIPT} getAguardando]</key>
-                    <delay>20s</delay>
+                    <delay>3m</delay>
                     <history>1h</history>
                     <trends>0</trends>
                     <value_type>CHAR</value_type>
@@ -175,9 +175,9 @@ oid</params>
                     </preprocessing>
                 </item>
                 <item>
-                    <name>aaa getCanais</name>
+                    <name>getCanais</name>
                     <key>system.run[{$LOCALSCRIPT} getCanais]</key>
-                    <delay>20s</delay>
+                    <delay>3m</delay>
                     <history>1h</history>
                     <trends>0</trends>
                     <status>DISABLED</status>
@@ -191,9 +191,9 @@ oid</params>
                     </preprocessing>
                 </item>
                 <item>
-                    <name>aaa getDepartamentos</name>
+                    <name>getDepartamentos</name>
                     <key>system.run[{$LOCALSCRIPT} getDepartamentos]</key>
-                    <delay>20s</delay>
+                    <delay>3m</delay>
                     <history>1h</history>
                     <trends>0</trends>
                     <value_type>CHAR</value_type>
@@ -206,9 +206,9 @@ oid</params>
                     </preprocessing>
                 </item>
                 <item>
-                    <name>aaa getEmAtendimento</name>
+                    <name>getEmAtendimento</name>
                     <key>system.run[{$LOCALSCRIPT} getEmAtendimento]</key>
-                    <delay>20s</delay>
+                    <delay>3m</delay>
                     <history>1h</history>
                     <trends>0</trends>
                     <value_type>CHAR</value_type>
@@ -221,9 +221,9 @@ oid</params>
                     </preprocessing>
                 </item>
                 <item>
-                    <name>aaa getUsuarios</name>
+                    <name>getUsuarios</name>
                     <key>system.run[{$LOCALSCRIPT} getUsuariosAtivos]</key>
-                    <delay>20s</delay>
+                    <delay>3m</delay>
                     <history>1h</history>
                     <trends>0</trends>
                     <value_type>CHAR</value_type>
@@ -282,7 +282,6 @@ oid</params>
                     <type>DEPENDENT</type>
                     <key>contador.atendimento.departamento</key>
                     <delay>0</delay>
-                    <lifetime>0d</lifetime>
                     <item_prototypes>
                         <item_prototype>
                             <name>Aguardando Atendimento Setor {#DEPARTAMENTO}</name>
@@ -348,7 +347,6 @@ oid</params>
                     <type>DEPENDENT</type>
                     <key>contador.por.atendente</key>
                     <delay>0</delay>
-                    <lifetime>0d</lifetime>
                     <description>Contador de Atendimento por Usuários</description>
                     <item_prototypes>
                         <item_prototype>
@@ -356,6 +354,8 @@ oid</params>
                             <type>DEPENDENT</type>
                             <key>usuario[{#ID_ATENDENTE}]</key>
                             <delay>0</delay>
+                            <history>120d</history>
+                            <trends>120d</trends>
                             <applications>
                                 <application>
                                     <name>Contador de Atendimento por Usuario</name>
