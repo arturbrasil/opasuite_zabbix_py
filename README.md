@@ -122,6 +122,6 @@ $[?(@.setor.oid == "{#ID_DEPARTAMENTO}")].length()
 
 - [Script em Python](./recursos/python/opaSuite.py)
 
-- [Daashboard do Grafana](./recursos/grafana/dashboard_opa_suite.json)
+- [Dashboard do Grafana](./recursos/grafana/dashboard_opa_suite.json)
 
 - [Template do Zabbix](./recursos/zabbix/OpaSuiteTemplate.xml)
