@@ -10,12 +10,11 @@
             "type": "dashboard"
         }]
     },
-    "description": "",
     "editable": true,
     "gnetId": null,
     "graphTooltip": 1,
     "id": 44,
-    "iteration": 1626706028503,
+    "iteration": 1626791652779,
     "links": [],
     "panels": [{
             "datasource": null,
@@ -837,10 +836,9 @@
             "pluginVersion": "8.0.6",
             "targets": [{
                 "application": {
-                    "filter": "OPA - Usuarios"
+                    "filter": "Usuarios"
                 },
                 "functions": [{
-                    "$$hashKey": "object:113",
                     "def": {
                         "category": "Alias",
                         "defaultParams": [
@@ -862,7 +860,8 @@
                         "/Total de Usuários (.*)/",
                         "$1"
                     ],
-                    "text": "replaceAlias(/Total de Usuários (.*)/, $1)"
+                    "text": "replaceAlias(/Total de Usuários (.*)/, $1)",
+                    "$$hashKey": "object:59"
                 }],
                 "group": {
                     "filter": "OPA SUITE"
@@ -1091,8 +1090,6 @@
                     "filter": "Contador de Atendimento por Usuario"
                 },
                 "functions": [{
-                    "$$hashKey": "object:33",
-                    "added": false,
                     "def": {
                         "category": "Alias",
                         "defaultParams": [
@@ -1114,7 +1111,8 @@
                         "/Usuario (.*)/",
                         "$1"
                     ],
-                    "text": "replaceAlias(/Usuario (.*)/, $1)"
+                    "text": "replaceAlias(/Usuario (.*)/, $1)",
+                    "$$hashKey": "object:32"
                 }],
                 "group": {
                     "filter": "OPA SUITE"
@@ -1165,8 +1163,8 @@
             "allValue": null,
             "current": {
                 "selected": false,
-                "text": "Opa Suite Clone",
-                "value": "Opa Suite Clone"
+                "text": "Opa Suite Santarem",
+                "value": "Opa Suite Santarem"
             },
             "datasource": null,
             "definition": "Zabbix - host",
@@ -1213,5 +1211,5 @@
     "timezone": "",
     "title": "Call Center - Opa Suite",
     "uid": "fUvJ4mW7z",
-    "version": 34
+    "version": 37
 }
