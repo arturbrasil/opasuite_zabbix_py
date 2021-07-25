@@ -1,7 +1,7 @@
 import sys
 import pymongo
 from bson.json_util import dumps
-from bson import ObjectId
+# from bson import ObjectId
 
 params = sys.argv
 item = params[1]
