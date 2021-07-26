@@ -26,8 +26,8 @@ def getDepartamentos():
     # end
 
 ## atendimentos 'aguardando' ou 'em atendimento'
-def getAtendimento():
-    cursor = (database['atendimentos'].find({'$or':[{'status':'AG'},{'status':'EA'}]},{'status','setor','atendente','departamento'}))
+def getAtendimentos():
+    cursor = (database['atendimentos'].find({'$or':[{'status':'AG'},{'status':'EA'}]},{'status','setor','id_atendente','canal_id','canal'}))
     list_cur = list(cursor)
     data_string = dumps(list_cur)
     data['atendimentos'] = json.loads(data_string);
@@ -43,7 +43,7 @@ def getCanais():
 
 getUsuarios()
 getDepartamentos()
-getAtendimento()
+getAtendimentos()
 getCanais()
 
-print(data)
+print(data['atendimentos'])

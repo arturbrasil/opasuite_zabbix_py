@@ -20,25 +20,25 @@ if item == "getCanais":
     print(json_data)
 
 if item == "getDepartamentos":
-    departamentos = (mydb["departamentos"].find({"status": "A"}))
+    departamentos = (mydb["departamentos"].find({"status": "A"},{'status','nome'}))
     list_cur = list(departamentos)
     json_data = dumps(list_cur)
     print(json_data)
 
 if item == "getEmAtendimento":
-    emAtendimento = (mydb["atendimentos"].find({"status": "EA"}))
+    emAtendimento = (mydb["atendimentos"].find({"status": "EA"},{'status','setor','id_atendente','canal_id','canal'}))
     list_cur = list(emAtendimento)
     json_data = dumps(list_cur)
     print(json_data)
 
 if item == "getAguardando":
-    atendimentos = (mydb["atendimentos"].find({"status": "AG"}))
+    atendimentos = (mydb["atendimentos"].find({"status": "AG"},{'status','setor','id_atendente','canal_id','canal'}))
     list_cur = list(atendimentos)
     json_data = dumps(list_cur)
     print(json_data)
 
-""" if item == "getAtendimentos":
-    atendimentos = (mydb["atendimentos"].find({"status": "AG"}))
+if item == "getAtendimentos":
+    atendimentos = (mydb['atendimentos'].find({'$or':[{'status':'AG'},{'status':'EA'}]},{'status','setor','id_atendente','canal_id','canal'}))
     list_cur = list(atendimentos)
     json_data = dumps(list_cur)
-    print(json_data) """
+    print(json_data)
