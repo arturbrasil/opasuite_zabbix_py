@@ -8,7 +8,7 @@ item = params[1]
 mydb = pymongo.MongoClient("mongodb://127.0.0.1:27017/")["suite"]
 
 if item == "getUsuariosAtivos":
-    usuarios = (mydb["usuarios"].find({"status": "A"}))
+    usuarios = (mydb["usuarios"].find({"status": "A"},{'nome','online'}))
     list_cur = list(usuarios)
     json_data = dumps(list_cur)
     print(json_data)
