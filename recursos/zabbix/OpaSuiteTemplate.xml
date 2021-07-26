@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>5.0</version>
-    <date>2021-07-20T13:40:52Z</date>
+    <date>2021-07-26T14:00:13Z</date>
     <groups>
         <group>
             <name>OPA SUITE</name>
@@ -35,7 +35,7 @@ EA - Em Atendimento</description>
                     <name>Em Atendimento por Setor</name>
                 </application>
                 <application>
-                    <name>OPA - Usuarios</name>
+                    <name>Usuarios</name>
                 </application>
             </applications>
             <items>
@@ -175,6 +175,21 @@ oid</params>
                     </preprocessing>
                 </item>
                 <item>
+                    <name>geAtendimentos</name>
+                    <key>system.run[{$LOCALSCRIPT} getAtendimentos]</key>
+                    <delay>3m</delay>
+                    <history>1h</history>
+                    <trends>0</trends>
+                    <value_type>CHAR</value_type>
+                    <preprocessing>
+                        <step>
+                            <type>STR_REPLACE</type>
+                            <params>$oid
+oid</params>
+                        </step>
+                    </preprocessing>
+                </item>
+                <item>
                     <name>getCanais</name>
                     <key>system.run[{$LOCALSCRIPT} getCanais]</key>
                     <delay>3m</delay>
@@ -242,7 +257,7 @@ oid</params>
                     <delay>0</delay>
                     <applications>
                         <application>
-                            <name>OPA - Usuarios</name>
+                            <name>Usuarios</name>
                         </application>
                     </applications>
                     <preprocessing>
@@ -262,7 +277,7 @@ oid</params>
                     <delay>0</delay>
                     <applications>
                         <application>
-                            <name>OPA - Usuarios</name>
+                            <name>Usuarios</name>
                         </application>
                     </applications>
                     <preprocessing>
@@ -282,6 +297,7 @@ oid</params>
                     <type>DEPENDENT</type>
                     <key>contador.atendimento.departamento</key>
                     <delay>0</delay>
+                    <lifetime>0d</lifetime>
                     <item_prototypes>
                         <item_prototype>
                             <name>Aguardando Atendimento Setor {#DEPARTAMENTO}</name>
@@ -347,6 +363,7 @@ oid</params>
                     <type>DEPENDENT</type>
                     <key>contador.por.atendente</key>
                     <delay>0</delay>
+                    <lifetime>0d</lifetime>
                     <description>Contador de Atendimento por Usuários</description>
                     <item_prototypes>
                         <item_prototype>
@@ -390,7 +407,7 @@ oid</params>
             <macros>
                 <macro>
                     <macro>{$LOCALSCRIPT}</macro>
-                    <value>python3 /home/scripts/opaSuite.py</value>
+                    <value>python3 /home/scripts/opaSuite2.py</value>
                     <description>pyhon3 + Local do script salvo no servidor</description>
                 </macro>
             </macros>
