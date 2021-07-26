@@ -35,4 +35,4 @@ getUsuarios()
 getDepartamentos()
 getAtendimento()
 
-print(data["atendimentos"])
+print(data)
