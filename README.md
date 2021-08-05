@@ -1,6 +1,6 @@
 # OPA SUITE + MONGODB + PYTHON
 
-![print grafana](./recursos/img/print.png)
+![image](https://user-images.githubusercontent.com/23584038/128373763-ffbb7def-8089-4e82-87d7-4039c2b2de86.png)
 
 ## ZABBIX-AGENT
 
