@@ -1,4 +1,4 @@
-# OPA SUITE + MONGODB + PYTHON
+# OPA SUITE + PYTHON + MONGODB
 
 ![image](https://user-images.githubusercontent.com/23584038/128373763-ffbb7def-8089-4e82-87d7-4039c2b2de86.png)
 
