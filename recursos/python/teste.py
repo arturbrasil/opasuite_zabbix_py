@@ -16,5 +16,5 @@ def getMes():
     mes = datetime.today().strftime('%Y-%m')
     return mes
 
-atendimentos = (database["atendimentos"].count_documents({'inicio': {'$gte': getHoje()}}))
+atendimentos = (database["atendimentos"].find())
 print(atendimentos)

@@ -1,8 +1,8 @@
-import sys
+import sys, json
 import pymongo
 from bson.json_util import dumps
 from datetime import datetime
-from bson import ObjectId
+#from bson import ObjectId
 
 params = sys.argv
 item = params[1]
@@ -17,8 +17,12 @@ def getMes():
     return mes
 
 if item == "getHoje":
-    atendimentos = (mydb["atendimentos"].count_documents({'inicio': {'$gte': getHoje()}}))
-    print(atendimentos)
+    atendimentos = (mydb["atendimentos"].find({'inicio': {'$gt': getHoje()}},{'inicio'}))
+    #print(atendimentos)
+    list_cur = list(atendimentos)
+    json_data = dumps(list_cur)
+    tojson = json.loads(json_data)
+    print(tojson)
 
 if item == "getMes":
     atendimentos = (mydb["atendimentos"].count_documents({'inicio': {'$gte': getMes()}}))
