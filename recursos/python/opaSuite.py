@@ -1,11 +1,28 @@
 import sys
 import pymongo
 from bson.json_util import dumps
-# from bson import ObjectId
+from datetime import datetime
+from bson import ObjectId
 
 params = sys.argv
 item = params[1]
 mydb = pymongo.MongoClient("mongodb://127.0.0.1:27017/")["suite"]
+
+def getHoje():
+    hoje = datetime.today().strftime('%Y-%m-%d')
+    return hoje
+
+def getMes():
+    mes = datetime.today().strftime('%Y-%m')
+    return mes
+
+if item == "getHoje":
+    atendimentos = (mydb["atendimentos"].count_documents({'inicio': {'$gte': getHoje()}}))
+    print(atendimentos)
+
+if item == "getMes":
+    atendimentos = (mydb["atendimentos"].count_documents({'inicio': {'$gte': getMes()}}))
+    print(atendimentos)
 
 if item == "getUsuariosAtivos":
     usuarios = (mydb["usuarios"].find({"status": "A"},{'nome','online'}))
@@ -39,6 +56,12 @@ if item == "getAguardando":
 
 if item == "getAtendimentos":
     atendimentos = (mydb['atendimentos'].find({'$or':[{'status':'AG'},{'status':'EA'}]},{'status','setor','id_atendente','canal_id','canal'}))
+    list_cur = list(atendimentos)
+    json_data = dumps(list_cur)
+    print(json_data)
+
+if item == "getAtendimentosHoje":
+    atendimentos = (mydb["atendimentos"].find({"status": "AG"},{'status','setor','id_atendente','canal_id','canal','inicio'}))
     list_cur = list(atendimentos)
     json_data = dumps(list_cur)
     print(json_data)
