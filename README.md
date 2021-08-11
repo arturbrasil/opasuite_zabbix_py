@@ -6,6 +6,8 @@
 
 ![image](https://user-images.githubusercontent.com/23584038/128373763-ffbb7def-8089-4e82-87d7-4039c2b2de86.png)
 
+![image](https://user-images.githubusercontent.com/23584038/129038880-5b06cd0f-ecfe-4cd9-991a-e15ba9ec333b.png)
+
 ## ZABBIX-AGENT
 
 > no servidor Opa Suite...
