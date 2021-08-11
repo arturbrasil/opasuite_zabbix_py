@@ -149,6 +149,8 @@ $[?(@.setor.oid == "{#ID_DEPARTAMENTO}")].length()
       2) Por canal
       3) Por usuário
 
+##
+
 - [Script em Python](./recursos/python/opaSuite.py)
 
 - [Dashboard do Grafana](./recursos/grafana/dashboard_opa_suite.json)
